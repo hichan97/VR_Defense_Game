@@ -46,10 +46,10 @@ GameObject:
   - component: {fileID: 989752503924023884}
   - component: {fileID: 6253680247053619906}
   - component: {fileID: 1008266035773215732}
+  - component: {fileID: 3549983365873474500}
   - component: {fileID: 1242157742270763709}
   - component: {fileID: 9104840985506980897}
   - component: {fileID: 6719724647952582024}
-  - component: {fileID: 6785611320933332405}
   m_Layer: 22
   m_Name: Jack O Lantern
   m_TagString: Untagged
@@ -112,8 +112,8 @@ MonoBehaviour:
   OnCreated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6785611320933332405}
-        m_TargetAssemblyTypeName: ChangeAgentDestinationToCore, Assembly-CSharp
+      - m_Target: {fileID: 3549983365873474500}
+        m_TargetAssemblyTypeName: ChangeAgentDestination, Assembly-CSharp
         m_MethodName: Call
         m_Mode: 1
         m_Arguments:
@@ -281,6 +281,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3549983365873474500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271740646947116179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ed856a9d25460049863f6bdb53519dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destination: {x: 0, y: 2, z: 1}
 --- !u!114 &1242157742270763709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48bc782095bd78147966b3da09766c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnHit:
+  Onhit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6253680247053619906}
@@ -343,18 +356,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.283
   m_Center: {x: 0, y: 0.2, z: 0}
---- !u!114 &6785611320933332405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271740646947116179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb94d645f12f1f04685a2eb65638c8f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2215115482397858883
 PrefabInstance:
   m_ObjectHideFlags: 0

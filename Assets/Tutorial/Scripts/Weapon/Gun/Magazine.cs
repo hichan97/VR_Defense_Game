@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Magazine : MonoBehaviour, IReloadable
+public class Magazine : MonoBehaviour
 {
     public int maxBullets = 20;
     public float chargintTime = 2f;
